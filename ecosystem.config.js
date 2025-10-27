@@ -2,10 +2,11 @@ module.exports = {
   apps: [
     {
       name: "nextjs-app",
-      script: "node_modules/next/dist/bin/next",
-      args: "start -p 3000 -H 0.0.0.0",
+      script: "npm",
+      args: "start",
       env: {
         NODE_ENV: "production",
+        PORT: 3000,
       },
     },
   ],
